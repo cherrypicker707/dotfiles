@@ -12,4 +12,5 @@ Required software:
 - flameshot,
 - ly,
 - polybar,
-- picom.
+- picom,
+- pamixer.
