@@ -1,0 +1,109 @@
+/* Theme file for Rofi. */
+/* ~/.local/rofi/theme.rasi */
+
+* {
+    bg: #100F0F;
+    bg-2: #1C1B1A;
+    ui: #282726;
+    ui-2: #343331;
+    ui-3: #403E3C;
+    tx-3: #575653;
+    tx-2: #878580;
+    tx: #CECDC3;
+
+    re-2: #AF3029;
+    or-2: #BC5215;
+    ye-2: #AD8301;
+    gr-2: #66800B;
+    cy-2: #24837B;
+    bl-2: #205EA6;
+    pu-2: #5E409D;
+    ma-2: #A02F6F;
+
+    re: #D14D41;
+    or: #DA702C;
+    ye: #D0A215;
+    gr: #879A39;
+    cy: #3AA99F;
+    bl: #4385BE;
+    pu: #8B7EC8;
+    ma: #CE5D97;
+}
+
+window {
+    font: "JetBrains Mono 10";
+    location: north;
+    anchor: north;
+    width: 600;
+    y-offset: 45;
+
+    padding: 10;
+
+    background-color: @bg;
+    text-color: @tx;
+}
+
+mainbox {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+inputbar {
+    spacing: 8;
+    children: [prompt, entry];
+
+    background-color: inherit;
+    text-color: inherit;
+}
+
+prompt {
+    background-color: inherit;
+    text-color: @ma;
+}
+
+entry {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+message {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+error-message {
+    background-color: inherit;
+    text-color: @re;
+}
+
+textbox {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+listview {
+    spacing: 0;
+    lines: 8;
+
+    background-color: inherit;
+    text-color: inherit;
+}
+
+element {
+    children: [element-text];
+
+    background-color: inherit;
+    text-color: inherit;
+}
+
+element selected {
+    children: [element-text];
+
+    background-color: inherit;
+    text-color: @pu;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+}
