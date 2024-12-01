@@ -59,10 +59,10 @@ client.background $bg
 
 # Commands to Run on Load
 exec_always --no-startup-id setxkbmap $kb
-exec_always --no-startup-id ~/.fehbg
-exec_always --no-startup-id ~/.local/share/polybar/launch.sh
 exec_always --no-startup-id picom
 exec_always --no-startup-id udiskie --automount
+exec_always --no-startup-id ~/.fehbg
+exec_always --no-startup-id ~/.local/share/polybar/launch.sh
 
 # Basic Keymaps
 bindsym $super+$left focus left
