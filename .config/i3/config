@@ -78,7 +78,7 @@ bindsym $super+Shift+$right move right
 bindsym $super+$left_resize resize shrink width 10 px or 10 ppt
 bindsym $super+$down_resize resize grow height 10 px or 10 ppt
 bindsym $super+$up_resize resize shrink height 10 px or 10 ppt
-bindsym $super+$up_resize resize grow width 10 px or 10 ppt
+bindsym $super+$right_resize resize grow width 10 px or 10 ppt
 
 # Window Keymaps
 bindsym $super+Shift+q kill
