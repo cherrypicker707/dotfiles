@@ -2,3 +2,6 @@
 .config/fish/completions/
 .config/fish/conf.d/
 .config/fish/fish_variables
+
+# Unimportant Neovim files
+.config/nvim/lazy-lock.json

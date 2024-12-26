@@ -19,3 +19,6 @@ rsync -r ~/.local/share/polybar/ .local/share/polybar/
 # Rofi
 rsync -r ~/.config/rofi/ .config/rofi/
 rsync -r ~/.local/share/rofi/ .local/share/rofi/
+
+# Neovim
+rsync -r ~/.config/nvim/ .config/nvim/
