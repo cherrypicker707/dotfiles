@@ -1,10 +1,21 @@
 # Script for Copying Files into This Repo
-cp ~/.config/i3/config .config/i3/config
-cp ~/.config/alacritty/alacritty.toml .config/alacritty/alacritty.toml
-cp ~/.config/fish/config.fish .config/fish/config.fish
-cp ~/.config/fish/functions/fish_prompt.fish .config/fish/functions/fish_prompt.fish
-cp ~/.config/picom/picom.conf .config/picom/picom.conf
-cp ~/.config/polybar/config.ini .config/polybar/config.ini
-cp ~/.local/share/polybar/launch.sh .local/share/polybar/launch.sh
-cp ~/.config/rofi/config.rasi .config/rofi/config.rasi
-cp ~/.local/share/rofi/theme.rasi .local/share/rofi/theme.rasi
+
+# i3
+rsync -r ~/.config/i3/ .config/i3/
+
+# Alacritty
+rsync -r ~/.config/alacritty/ .config/alacritty/
+
+# fish
+rsync  -r ~/.config/fish/ .config/fish/
+
+# picom
+rsync -r ~/.config/picom/ .config/picom/
+
+# Polybar
+rsync -r ~/.config/polybar/ .config/polybar/
+rsync -r ~/.local/share/polybar/ .local/share/polybar/
+
+# Rofi
+rsync -r ~/.config/rofi/ .config/rofi/
+rsync -r ~/.local/share/rofi/ .local/share/rofi/

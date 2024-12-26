@@ -1,10 +1,10 @@
 # Configuration for i3
 
 # Variables
-set $left h
-set $down j
-set $up k
-set $right l
+set $left j
+set $down k
+set $up l
+set $right semicolon
 set $left_resize u
 set $down_resize i
 set $up_resize o

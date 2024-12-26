@@ -1,0 +1,4 @@
+# Unimportant fish files
+.config/fish/completions/
+.config/fish/conf.d/
+.config/fish/fish_variables
