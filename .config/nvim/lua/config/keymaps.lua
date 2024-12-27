@@ -2,11 +2,6 @@
 
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
-vim.keymap.set('n', 'j', 'h', { noremap = true })
-vim.keymap.set('n', 'k', 'j', { noremap = true })
-vim.keymap.set('n', 'l', 'k', { noremap = true })
-vim.keymap.set('n', ';', 'l', { noremap = true })
-
 vim.keymap.set('n', '<left>', '<cmd>echo "use h to move"<CR>')
 vim.keymap.set('n', '<right>', '<cmd>echo "use l to move"<CR>')
 vim.keymap.set('n', '<up>', '<cmd>echo "use k to move"<CR>')

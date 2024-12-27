@@ -1,9 +1,7 @@
--- Configuration for 'flexoki-nvim' Neovim plugin.
-
 return {
     'kepano/flexoki-neovim',
-    priority = 100,
+    name = 'flexoki',
     config = function()
         vim.cmd('colorscheme flexoki-dark')
-    end,
+    end
 }

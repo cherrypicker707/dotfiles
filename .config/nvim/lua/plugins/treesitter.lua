@@ -1,9 +1,10 @@
--- Configuration for 'nvim-treesitter' Neovim plugin.
-
 return {
     'nvim-treesitter/nvim-treesitter',
+    name = 'treesitter',
     config = function()
-        require('nvim-treesitter.configs').setup({
+        local treesitter = require('nvim-treesitter.configs')
+
+        treesitter.setup({
             ensure_installed = {
                 'asm',
                 'bash',
