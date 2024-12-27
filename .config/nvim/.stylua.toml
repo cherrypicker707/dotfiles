@@ -1,0 +1,8 @@
+# Configuration for StyLua
+column_width = 65536
+indent_type = "Spaces"
+indent_width = 4
+quote_style = "ForceSingle"
+
+[sort_requires]
+enabled = true

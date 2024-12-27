@@ -7,4 +7,8 @@ return {
         'hrsh7th/cmp-path',
         name = 'cmp_path',
     },
+    {
+        'nvim-neotest/nvim-nio',
+        name = 'nio',
+    },
 }

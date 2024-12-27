@@ -18,5 +18,5 @@ return {
         })
 
         vim.keymap.set('n', '<leader>m', '<cmd>Mason<CR>')
-    end
+    end,
 }

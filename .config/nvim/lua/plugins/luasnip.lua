@@ -6,5 +6,5 @@ return {
         local luasnip = require('luasnip')
 
         luasnip.config.setup({})
-    end
+    end,
 }
