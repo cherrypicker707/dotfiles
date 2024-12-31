@@ -2,4 +2,4 @@
 set --export --universal EDITOR nvim
 set --export --universal VISUAL nvim
 set --export --universal PAGER nvim
-set --export --universal MANPAGER nvim
+set --export --universal MANPAGER nvim +Man!

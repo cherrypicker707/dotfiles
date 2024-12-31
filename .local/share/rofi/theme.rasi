@@ -81,6 +81,7 @@ textbox {
 }
 
 listview {
+    fixed-height: false;
     spacing: 0;
     lines: 8;
 

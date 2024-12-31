@@ -1,10 +1,10 @@
 # Configuration for i3
 
 # Variables
-set $left j
-set $down k
-set $up l
-set $right semicolon
+set $left h
+set $down j
+set $up k
+set $right l
 set $left_resize u
 set $down_resize i
 set $up_resize o
@@ -93,10 +93,7 @@ bindsym XF86AudioMute exec --no-startup-id pamixer --toggle-mute
 
 bindsym $super+t exec alacritty
 bindsym $super+Return exec rofi -show drun
-
-bindsym $super+Shift+c reload
-bindsym $super+Shift+r restart
-bindsym $super+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $super+e exec fish ~/.local/share/rofi/menu.fish
 
 # Workspaces
 set $workspace1 "1"
