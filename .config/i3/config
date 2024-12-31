@@ -94,6 +94,7 @@ bindsym XF86AudioMute exec --no-startup-id pamixer --toggle-mute
 bindsym $super+t exec alacritty
 bindsym $super+Return exec rofi -show drun
 bindsym $super+e exec fish ~/.local/share/rofi/menu.fish
+bindsym $super+s exec flameshot gui
 
 # Workspaces
 set $workspace1 "1"

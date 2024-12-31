@@ -22,3 +22,6 @@ rsync -r ~/.local/share/rofi/ .local/share/rofi/
 
 # Neovim
 rsync -r ~/.config/nvim/ .config/nvim/
+
+# Wallpaper
+rsync -r ~/.wallpapers/ .wallpapers
