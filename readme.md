@@ -1,5 +1,5 @@
 # Dotfiles
-Configuration files for my Linux system. It uses [Catppuccin Mocha](https://github.com/catppuccin/catppuccin) colorscheme.
+Configuration files for my Linux system. They use [Catppuccin Mocha](https://github.com/catppuccin/catppuccin) colorscheme.
 
 ## Utilized Software
 - [i3](https://i3wm.org)
