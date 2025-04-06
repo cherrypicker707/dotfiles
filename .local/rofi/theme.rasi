@@ -1,0 +1,124 @@
+/* Theme for Rofi */
+
+/* Cattuccin Mocha (https://github.com/catppuccin/rofi)*/
+* {
+  rosewater: #f5e0dc;
+  flamingo: #f2cdcd;
+  pink: #f5c2e7;
+  mauve: #cba6f7;
+  red: #f38ba8;
+  maroon: #eba0ac;
+  peach: #fab387;
+  yellow: #f9e2af;
+  green: #a6e3a1;
+  teal: #94e2d5;
+  sky: #89dceb;
+  sapphire: #74c7ec;
+  blue: #89b4fa;
+  lavender: #b4befe;
+  text: #cdd6f4;
+  subtext1: #bac2de;
+  subtext0: #a6adc8;
+  overlay2: #9399b2;
+  overlay1: #7f849c;
+  overlay0: #6c7086;
+  surface2: #585b70;
+  surface1: #45475a;
+  surface0: #313244;
+  base: #1e1e2e;
+  mantle: #181825;
+  crust: #11111b;
+  }
+
+
+window {
+    font: "JetBrains Mono 10";
+    location: north;
+    anchor: north;
+    width: 600;
+    y-offset: 74;
+
+    border: 1;
+    border-color: @mauve;
+
+    padding: 10;
+
+    background-color: @base;
+    text-color: @blue;
+}
+
+mainbox {
+    spacing: 10;
+
+    background-color: inherit;
+    text-color: inherit;
+}
+
+inputbar {
+    spacing: 0;
+    children: [prompt, entry];
+
+    border: 1;
+    border-color: @pink;
+
+    padding: 1;
+
+    background-color: inherit;
+    text-color: inherit;
+}
+
+prompt {
+    background-color: inherit;
+    text-color: @lavender;
+}
+
+entry {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+message {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+error-message {
+    background-color: inherit;
+    text-color: @red;
+}
+
+textbox {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+listview {
+    fixed-height: false;
+    spacing: 0;
+    lines: 8;
+
+    border: 1;
+    border-color: @flamingo;
+
+    background-color: inherit;
+    text-color: @flamingo;
+}
+
+element {
+    children: [element-text];
+
+    background-color: inherit;
+    text-color: inherit;
+}
+
+element selected {
+    children: [element-text];
+
+    background-color: @flamingo;
+    text-color: @base;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+}
