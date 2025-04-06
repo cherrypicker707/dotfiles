@@ -15,3 +15,5 @@ Configuration files for my Linux system. They use [Catppuccin Mocha](https://git
 - [fish](https://fishshell.com)
 - [Flameshot](https://github.com/flameshot-org/flameshot)
 - [ranger](https://ranger.github.io/)
+- [Neovim](https://neovim.io)
+- [Sudo](https://www.sudo.ws/sudo/)

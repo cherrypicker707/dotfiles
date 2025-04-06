@@ -1,0 +1,10 @@
+# Universal Variables for fish
+
+SETUVAR --export EDITOR:nvim
+SETUVAR --export VISUAL:nvim
+SETUVAR --export PAGER:nvim
+SETUVAR --export MANPAGER:nvim\x1e\x2bMan\x21\x1e\x2bset\x5c\x1esigncolumn\x3dno
+SETUVAR --export SUDO_PROMPT:\x20\x1b\x5b1m\x1b\x5b91mpassword\x3a\x20\x1b\x28B\x1b\x5bm
+SETUVAR --export fish_greeting:\x1d
+SETUVAR --export RANGER_LOAD_DEFAUL_RC:false
+SETUVAR --export QT_STYLE_OVERRIDE:kvantum
