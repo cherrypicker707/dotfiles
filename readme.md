@@ -3,7 +3,7 @@ Configuration files for my Linux system. They use [Catppuccin Mocha](https://git
 
 ## Utilized Software
 - [i3](https://i3wm.org)
-- [Alacritty](https://alacritty.org)
+- [Kitty](https://sw.kovidgoyal.net/kitty/)
 - [JetBrains Mono](https://www.jetbrains.com/lp/mono)
 - [X.Org](https://xorg.freedesktop.org)
 - [picom](https://github.com/yshui/picom)
