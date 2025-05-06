@@ -21,3 +21,5 @@ Configuration files for my Linux system. They use [Catppuccin Mocha](https://git
 - [Tree](https://gitlab.com/OldManProgrammer/unix-tree)
 - [Pacman](https://pacman.archlinux.page)
 - [slock](https://tools.suckless.org/slock/)
+- [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
+- [GTK](https://www.gtk.org/)
