@@ -24,3 +24,4 @@ Configuration files for my Linux system. They use [Catppuccin Mocha](https://git
 - [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 - [GTK](https://www.gtk.org/)
 - [Fastfetch](https://github.com/fastfetch-cli/fastfetch)
+- [Ly](https://github.com/fairyglade/ly)
