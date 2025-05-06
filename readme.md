@@ -23,3 +23,4 @@ Configuration files for my Linux system. They use [Catppuccin Mocha](https://git
 - [slock](https://tools.suckless.org/slock/)
 - [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 - [GTK](https://www.gtk.org/)
+- [Fastfetch](https://github.com/fastfetch-cli/fastfetch)
