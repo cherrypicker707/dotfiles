@@ -82,7 +82,7 @@ color = "#f38ba8"
 style = { shape = "Underline", blinking = "Always" }
 
 [terminal]
-shell = "/usr/bin/fish"
+shell = "/usr/bin/zsh"
 
 [mouse]
 hide_when_typing = true
