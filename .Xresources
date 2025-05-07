@@ -1,0 +1,4 @@
+! Configuration for Catppuccin Cursors
+
+Xcursor.theme: catppuccin-mocha-dark-cursors
+Xcursor.size: 24

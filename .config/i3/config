@@ -58,6 +58,7 @@ client.placeholder $text $base $text $text $text
 client.background $base
 
 # Commands to Run on Load
+exec_always --no-startup-id xrdb ~/.Xresources
 exec_always --no-startup-id setxkbmap $kb
 exec_always --no-startup-id picom
 exec_always --no-startup-id udiskie --automount
