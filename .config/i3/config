@@ -40,7 +40,7 @@ set $mantle #181825
 set $crust #11111b
 
 # Options
-font pango:JetBrains Mono 12
+font pango:Fira Code 10
 default_border normal 1
 title_align center
 gaps inner 10

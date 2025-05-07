@@ -4,7 +4,7 @@ Configuration files for my Linux system. They use [Catppuccin Mocha](https://git
 ## Utilized Software
 - [i3](https://i3wm.org)
 - [Alacritty](https://alacritty.org)
-- [JetBrains Mono](https://www.jetbrains.com/lp/mono)
+- [Fira Code](https://github.com/tonsky/FiraCode)
 - [X.Org](https://xorg.freedesktop.org)
 - [picom](https://github.com/yshui/picom)
 - [udiskie](https://pypi.org/project/udiskie)
