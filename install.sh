@@ -2,13 +2,13 @@
 
 repodir=${0:a:h}
 
-mkdir code
-mkdir desktop
-mkdir documents
-mkdir downloads
-mkdir music
-mkdir pictures
-mkdir videos
+mkdir ~/code
+mkdir ~/desktop
+mkdir ~/documents
+mkdir ~/downloads
+mkdir ~/music
+mkdir ~/pictures
+mkdir ~/videos
 
 rsync -rv $repodir/.config ~/
 rsync -rv $repodir/.local ~/
@@ -36,5 +36,5 @@ sudo make -C ~/.local/third_party/slock clean install
 mkdir ~/.icons
 mkdir ~/.icons/catppuccin-mocha-dark-cursors
 wget --output-document ~/.icons/cursors.zip https://github.com/catppuccin/cursors/releases/download/v2.0.0/catppuccin-mocha-dark-cursors.zip
-unzip ~/.icons/cursors.zip -d ~/icons/
-rm .icons/cursors.zip
+unzip ~/.icons/cursors.zip -d ~/.icons/
+rm ~/.icons/cursors.zip
