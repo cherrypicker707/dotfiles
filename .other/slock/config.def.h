@@ -1,8 +1,8 @@
 // Configuration for slock
 // Used during compilation.
 
-static const char *user  = "cherrypicker707";
-static const char *group = "wheel";
+static const char *user  = "nobody";
+static const char *group = "nobody";
 
 static const char *colorname[NUMCOLS] = {
     [INIT] =   "#1e1e2e",

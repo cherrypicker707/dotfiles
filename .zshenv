@@ -1,6 +1,6 @@
 # Environmental Variables
 
-export PROMPT=" %B%F{cyan}%1~%f %F{blue}»%f%b "
+export PROMPT=" %B%F{cyan}%~%f %F{blue}»%f%b "
 export SUDO_PROMPT=" [1;91mpassword:[0m "
 
 export EDITOR="nvim"
