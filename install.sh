@@ -29,7 +29,7 @@ git config --global user.email $email
 
 mkdir ~/.local/third_party
 git clone https://git.suckless.org/slock ~/.local/third_party/slock
-rsync -v $repodir/.other/slock/config.def ~/.local/third_party/slock/
+rsync -v $repodir/.other/slock/config.def.h ~/.local/third_party/slock/
 sudo make -C ~/.local/third_party/slock clean install
 
 # Catppuccin Cursors (https://github.com/catppuccin/cursors)
