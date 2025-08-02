@@ -1,5 +1,3 @@
-# Configuration for i3
-
 # Variables
 set $left h
 set $down j
@@ -7,11 +5,11 @@ set $up k
 set $right l
 set $super Mod4
 
-set $kb pl
+set $keyboard_layout pl
 
 set $terminal alacritty
 
-# Catppuccin Mocha (https://github.com/catppuccin/i3)
+# Catppuccin Mocha Colorscheme (https://github.com/catppuccin/i3)
 set $rosewater #f5e0dc
 set $flamingo #f2cdcd
 set $pink #f5c2e7
@@ -40,7 +38,7 @@ set $mantle #181825
 set $crust #11111b
 
 # Options
-font pango:Fira Code 10
+font pango:IBM Plex Mono 12
 default_border normal 1
 title_align center
 gaps inner 10
@@ -48,6 +46,9 @@ gaps top 32
 floating_modifier $super
 focus_follows_mouse no
 tiling_drag off
+
+# Force Border on All Windows
+for_window [all] border normal 1
 
 # Colors
 client.focused $peach $base $yellow $peach $peach
@@ -59,7 +60,7 @@ client.background $base
 
 # Commands to Run on Load
 exec_always --no-startup-id xrdb ~/.Xresources
-exec_always --no-startup-id setxkbmap $kb
+exec_always --no-startup-id setxkbmap $keyboard_layout
 exec_always --no-startup-id picom
 exec_always --no-startup-id udiskie --automount
 exec_always --no-startup-id ~/.fehbg
@@ -87,7 +88,7 @@ mode "resize" {
     bindsym $super+r mode "default"
 }
 
-# Window Keymaps
+# Window-related Keymaps
 bindsym $super+u kill
 bindsym $super+i fullscreen toggle
 bindsym $super+space floating toggle
@@ -101,7 +102,7 @@ bindsym $super+Return exec rofi -show drun
 bindsym $super+o exec zsh ~/.local/share/rofi/power_menu.sh
 bindsym $super+p exec flameshot gui
 bindsym $super+n exec $terminal
-bindsym $super+m exec $terminal -e ranger
+bindsym $super+m exec $terminal -e zsh -c ranger
 
 # Workspaces
 set $workspace1 "1"
