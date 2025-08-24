@@ -3,7 +3,7 @@
 function power_off_prompt
 {
     sudo shutdown --poweroff
-    OPTION=$(printf "power off now\ncancel\n" | rofi -dmenu -p " > " -mesg "system is to be powered off in a minute")
+    OPTION=$(printf "power off now\ncancel\n" | rofi -dmenu -p "»" -mesg "system is to be powered off in a minute")
 
     case $OPTION in
         "power off now")
@@ -18,7 +18,7 @@ function power_off_prompt
 function reboot_prompt
 {
     shutdown --reboot
-    OPTION=$(printf "reboot now\ncancel\n" | rofi -dmenu -p " > " -mesg "system is to be rebooted in a minute")
+    OPTION=$(printf "reboot now\ncancel\n" | rofi -dmenu -p "»" -mesg "system is to be rebooted in a minute")
 
     case $OPTION in
         "reboot now")
@@ -30,7 +30,7 @@ function reboot_prompt
     esac
 }
 
-OPTION=$(printf "lock screen\nrestart wm\nlog out\npower off\nreboot\ncancel\n" | rofi -dmenu -p " > ")
+OPTION=$(printf "lock screen\nrestart wm\nlog out\npower off\nreboot\ncancel\n" | rofi -dmenu -p "»")
 
 case $OPTION in
     "lock screen")

@@ -1,0 +1,4 @@
+2c2
+< import = [ "catppuccin_latte.toml" ]
+---
+> import = [ "catppuccin_mocha.toml" ]

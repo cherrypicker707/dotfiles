@@ -1,0 +1,4 @@
+13c13
+< include ~/.config/i3/catppuccin_latte
+---
+> include ~/.config/i3/catppuccin_mocha

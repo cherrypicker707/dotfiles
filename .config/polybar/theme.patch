@@ -1,0 +1,4 @@
+1c1
+< include-file = ~/.config/polybar/catppuccin_latte.ini
+---
+> include-file = ~/.config/polybar/catppuccin_mocha.ini
