@@ -1,0 +1,97 @@
+@import "catppuccin_mocha.rasi"
+
+window {
+    font: "IBM Plex Sans 10";
+    location: north;
+    anchor: north;
+    width: 600;
+    y-offset: 74;
+
+    border: 1;
+    border-color: @mauve;
+
+    padding: 10;
+
+    background-color: @base;
+    text-color: @blue;
+}
+
+mainbox {
+    spacing: 10;
+
+    background-color: inherit;
+    text-color: inherit;
+}
+
+inputbar {
+    spacing: 0;
+    children: [prompt, entry];
+
+    border: 1;
+    border-color: @pink;
+
+    padding: 1;
+
+    background-color: inherit;
+    text-color: inherit;
+}
+
+prompt {
+    background-color: inherit;
+    text-color: @lavender;
+
+    padding: 0 5;
+}
+
+entry {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+message {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+error-message {
+    background-color: inherit;
+    text-color: @red;
+}
+
+textbox {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+listview {
+    fixed-height: false;
+    spacing: 0;
+    lines: 8;
+
+    border: 1;
+    border-color: @flamingo;
+
+    background-color: inherit;
+    text-color: @flamingo;
+}
+
+element {
+    children: [element-text];
+
+    background-color: inherit;
+    text-color: inherit;
+
+    padding: 0 0 0 5;
+}
+
+element selected {
+    children: [element-text];
+
+    background-color: @flamingo;
+    text-color: @base;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+}
