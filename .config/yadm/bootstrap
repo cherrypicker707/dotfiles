@@ -1,0 +1,16 @@
+#! /bin/zsh
+
+xdg-user-dirs-update
+XDG_DOWNLOAD_DIR=$(xdg-user-dir DOWNLOAD)
+
+feh --bg-fill ~/.wallpapers/dark_wallpaper.png
+
+mkdir .icons
+
+wget -P "~/$XDG_DOWNLOAD_DIR" "https://github.com/catppuccin/cursors/releases/download/v2.0.0/catppuccin-mocha-dark-cursors.zip"
+unzip "~/$XDG_DOWNLOAD_DIR/catppuccin-mocha-dark-cursors.zip" "~/.icons"
+rm "~/$XDG_DOWNLOAD_DIR/catppuccin-mocha-dark-cursors.zip"
+
+wget -P "~/$XDG_DOWNLOAD_DIR" "https://github.com/catppuccin/cursors/releases/download/v2.0.0/catppuccin-latte-light-cursors.zip"
+unzip "~/$XDG_DOWNLOAD_DIR/catppuccin-latte-light-cursors.zip" "~/.icons"
+rm "~/$XDG_DOWNLOAD_DIR/catppuccin-latte-light-cursors.zip"
