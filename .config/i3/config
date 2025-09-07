@@ -1,0 +1,107 @@
+# Variables
+set $left h
+set $down j
+set $up k
+set $right l
+set $super Mod4
+
+set $keyboard_layout pl
+
+set $terminal alacritty
+
+# Colorscheme
+include ~/.config/i3/catppuccin_mocha
+
+# Options
+font pango:IBM Plex Sans 12
+default_border normal 1
+title_align center
+gaps inner 10
+gaps top 32
+floating_modifier $super
+focus_follows_mouse no
+tiling_drag off
+
+# Force Border on All Windows
+for_window [all] border normal 1
+
+# Commands to Run on Load
+exec_always --no-startup-id xrdb ~/.Xresources
+exec_always --no-startup-id setxkbmap $keyboard_layout
+exec_always --no-startup-id picom
+exec_always --no-startup-id udiskie --automount
+exec_always --no-startup-id ~/.fehbg
+exec_always --no-startup-id ~/.local/share/polybar/launch.sh
+
+# Basic Keymaps
+bindsym $super+$left focus left
+bindsym $super+$down focus down
+bindsym $super+$up focus up
+bindsym $super+$right focus right
+
+bindsym $super+Shift+$left move left
+bindsym $super+Shift+$down move down
+bindsym $super+Shift+$up move up
+bindsym $super+Shift+$right move right
+
+bindsym $super+r mode "resize"
+
+mode "resize" {
+    bindsym $super+$left resize shrink width 10 px or 10 ppt
+    bindsym $super+$down resize grow height 10 px or 10 ppt
+    bindsym $super+$up resize shrink height 10 px or 10 ppt
+    bindsym $super+$right resize grow width 10 px or 10 ppt
+
+    bindsym $super+r mode "default"
+}
+
+# Window-related Keymaps
+bindsym $super+u kill
+bindsym $super+i fullscreen toggle
+bindsym $super+space floating toggle
+
+# Other Keympas
+bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer --increase 10
+bindsym XF86AudioLowerVolume exec --no-startup-id pamixer --decrease 10
+bindsym XF86AudioMute exec --no-startup-id pamixer --toggle-mute
+
+bindsym $super+Return exec rofi -show drun
+bindsym $super+y exec zsh ~/.local/share/rofi/switch_theme.sh
+bindsym $super+o exec zsh ~/.local/share/rofi/power_menu.sh
+bindsym $super+p exec flameshot gui
+bindsym $super+n exec $terminal
+bindsym $super+m exec $terminal -e zsh -c ranger
+
+# Workspaces
+set $workspace1 "1"
+set $workspace2 "2"
+set $workspace3 "3"
+set $workspace4 "4"
+set $workspace5 "5"
+set $workspace6 "6"
+set $workspace7 "7"
+set $workspace8 "8"
+set $workspace9 "9"
+set $workspace10 "10"
+
+bindsym $super+1 workspace number $workspace1
+bindsym $super+2 workspace number $workspace2
+bindsym $super+3 workspace number $workspace3
+bindsym $super+4 workspace number $workspace4
+bindsym $super+5 workspace number $workspace5
+bindsym $super+6 workspace number $workspace6
+bindsym $super+7 workspace number $workspace7
+bindsym $super+8 workspace number $workspace8
+bindsym $super+9 workspace number $workspace9
+bindsym $super+0 workspace number $workspace10
+
+bindsym $super+Shift+1 move container to workspace number $workspace1
+bindsym $super+Shift+2 move container to workspace number $workspace2
+bindsym $super+Shift+3 move container to workspace number $workspace3
+bindsym $super+Shift+4 move container to workspace number $workspace4
+bindsym $super+Shift+5 move container to workspace number $workspace5
+bindsym $super+Shift+6 move container to workspace number $workspace6
+bindsym $super+Shift+7 move container to workspace number $workspace7
+bindsym $super+Shift+8 move container to workspace number $workspace8
+bindsym $super+Shift+9 move container to workspace number $workspace9
+bindsym $super+Shift+0 move container to workspace number $workspace10
